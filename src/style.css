@@ -1,13 +1,71 @@
 :root {
   font-family: "Comfortaa", cursive;
   font-family: "Nunito", sans-serif;
+  font-size: 18px;
 }
 
-body{
-background-color: #000;
+body {
+  background: linear-gradient(-45deg, #fccb90, #d57eeb, #a6c0fe, #84fab0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: "Nunito";
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Comfortaa";
+}
 
 .container {
-  background-color: blueviolet;
+  max-width: 700px;
+}
+
+.clock__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-self: center;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  padding: 2rem;
+}
+.clock__box {
+  width: 100%;
+}
+.clock__box select {
+  background-color: transparent;
+  border-color: white;
+}
+
+select option {
+  border-radius: 5px;
+}
+
+.form-select:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(236, 244, 255, 0.25) !important;
+  border-color: whitesmoke;
 }
