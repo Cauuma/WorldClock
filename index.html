@@ -24,21 +24,20 @@
     <!--moment js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    <!--local js file-->
-    <script src="src/index.js"></script>
+
     <title>World Clock | by Katrin Wellinger Web Massive</title>
   </head>
   <body>
     <div class="container">
       <div class="clock__wrapper">
         <h1>World Clock 🌍</h1>
-        <div class="selected__time mb-3">TBD</div>
+        <div class="selected__time mb-3" id="selectedCity"></div>
         <div class="clock__box mb-3">
           <select class="form-select form-select-lg mb-3" id="city">
             <option value="">Select a city..</option>
             <option value="current">My current location</option>
             <option value="Europe/London">London</option>
-            <option value="America/Sao_Paulo">New York</option>
+            <option value="America/Sao_Paulo">Sao Paulo</option>
             <option value="Australia/Sydney">Sydney</option>
           </select>
         </div>
@@ -70,5 +69,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
+    <!--local js file-->
+    <script src="src/index.js"></script>
   </body>
 </html>
