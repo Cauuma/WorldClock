@@ -34,25 +34,28 @@
         <h1>World Clock 🌍</h1>
         <div class="selected__time mb-3">TBD</div>
         <div class="clock__box mb-3">
-          <select class="form-select form-select-lg mb-3">
-            <option selected>Please select a city</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+          <select class="form-select form-select-lg mb-3" id="city">
+            <option value="">Select a city..</option>
+            <option value="current">My current location</option>
+            <option value="Europe/London">London</option>
+            <option value="America/Sao_Paulo">New York</option>
+            <option value="Australia/Sydney">Sydney</option>
           </select>
         </div>
-        <div class="city_times d-flex flex-column">
-          <div class="cities d-flex flex-row justify-content-between mb-4">
-            <h2>Zurich</h2>
-            <div class="time">TBD</div>
+        <div id="cities">
+          <div class="city" id="new_york">
+            <div>
+              <h2>New York</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="cities d-flex flex-row justify-content-between mb-4">
-            <h2>Sydney</h2>
-            <div class="time">TBD</div>
-          </div>
-          <div class="cities d-flex flex-row justify-content-between mb-4">
-            <h2>New York</h2>
-            <div class="time">TBD</div>
+          <div class="city" id="zurich">
+            <div>
+              <h2>Zurich</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
         </div>
       </div>
