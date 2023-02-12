@@ -102,3 +102,14 @@ select option {
   vertical-align: middle;
   line-height: 48px;
 }
+
+.btn-custom {
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  color: white;
+}
+.btn-custom:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1.2px solid whitesmoke;
+  color: white;
+}

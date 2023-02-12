@@ -26,6 +26,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  //Shanghai
+  let shanghaiElement = document.querySelector("#shanghai");
+
+  if (shanghaiElement) {
+    let shanghaiDateElement = shanghaiElement.querySelector(".date");
+    let shanghaiTimeElement = shanghaiElement.querySelector(".time");
+    let shanghaiTime = moment.tz("Asia/Shanghai");
+
+    shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
+    shanghaiTimeElement.innerHTML = shanghaiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 //update City
@@ -48,6 +61,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+    <a class="btn btn-custom" href="/index.html">Back to Homepage</a>
   `;
 }
 
